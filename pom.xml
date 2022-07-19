@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>io.github.demondevilhades</groupId>
+	<artifactId>commons-util</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	
+	<packaging>jar</packaging>
+
+	<name>${project.artifactId}</name>
+	<description>Awesome Utilities</description>
+	<url>https://github.com/demondevilhades/awesome-util</url>
+
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>https://opensource.org/licenses/MIT</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Awesome</name>
+			<id>demondevilhades</id>
+			<email>demonhades@foxmail.com</email>
+			<organization />
+			<roles>
+				<role>Project Owner</role>
+			</roles>
+		</developer>
+	</developers>
+
+	<scm>
+		<tag>${project.artifactId}-${project.version}</tag>
+		<url>${project.url}</url>
+		<connection>scm:git:${project.url}.git</connection>
+		<developerConnection>scm:git:${project.url}.git</developerConnection>
+	</scm>
+
+	<distributionManagement>
+		<!--<repository>
+			<id>ossrh</id>
+			<name>Nexus Release Repository</name>
+			<url>https://s01.oss.sonatype.org/content/repositories/releases/</url>
+		</repository>-->
+		<snapshotRepository>
+			<id>ossrh</id>
+			<name>Nexus Snapshot Repository</name>
+			<url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		
+		<lombok.version>1.18.20</lombok.version>
+
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+
+		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>${lombok.version}</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+</project>
