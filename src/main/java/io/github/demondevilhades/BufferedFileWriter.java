@@ -1,4 +1,4 @@
-package awesome.commons.util;
+package io.github.demondevilhades;
 
 import java.io.BufferedWriter;
 import java.io.File;
