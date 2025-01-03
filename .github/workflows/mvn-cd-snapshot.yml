@@ -2,9 +2,9 @@
 name: CD-snapshots
 on:
   push:
-    branches: [ "snapshots" ]
+    branches: [ "snapshot" ]
   pull_request:
-    branches: [ "snapshots" ]
+    branches: [ "snapshot" ]
 jobs:
   publish_snapshots:
     runs-on: ubuntu-latest

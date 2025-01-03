@@ -5,7 +5,7 @@
 
 	<groupId>io.github.demondevilhades</groupId>
 	<artifactId>commons-util</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2</version>
 	
 	<packaging>jar</packaging>
 
@@ -61,7 +61,7 @@
 			</distributionManagement>
 		</profile>
 		<profile>
-			<id>Staging</id>
+			<id>Release</id>
             <activation>
                 <activeByDefault>false</activeByDefault>
             </activation>
@@ -69,7 +69,7 @@
 				<repository>
 					<id>ossrh</id>
 					<name>Nexus Staging Repository</name>
-					<url>https://s01.oss.sonatype.org/content/groups/staging/</url>
+					<url>https://s01.oss.sonatype.org/content/repositories/releases/</url>
 				</repository>
 			</distributionManagement>
 		</profile>
