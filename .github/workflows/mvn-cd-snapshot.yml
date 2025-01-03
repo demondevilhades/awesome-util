@@ -2,11 +2,11 @@
 name: CD-snapshots
 on:
   push:
-    branches: [ "snapshots" ]
+    branches: [ "snapshot" ]
   pull_request:
-    branches: [ "snapshots" ]
+    branches: [ "snapshot" ]
 jobs:
-  publish_snapshots:
+  publish_snapshot:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
