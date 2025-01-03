@@ -5,7 +5,7 @@
 
 	<groupId>io.github.demondevilhades</groupId>
 	<artifactId>commons-util</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2</version>
 	
 	<packaging>jar</packaging>
 
